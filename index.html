@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todo app collection</title>
+  </head>
+  <body>
+    <header class="page__header">
+      <p class="page__header__kicker">motion + View Transition</p>
+      <h1 class="page__header__title">Todo App Collection</h1>
+      <p class="page__header__subtitle">同一套应用，八个框架实现 —— native · react · preact · vue · svelte · lit · solid · angular</p>
+    </header>
+
+    <div id="react"></div>
+    <div id="vue"></div>
+    <div id="svelte"></div>
+    <div id="solid"></div>
+    <div id="preact"></div>
+    <div id="lit"></div>
+    <div id="angular"></div>
+    <div id="native">
+      <main class="todo__app" aria-label="原生 todo 应用">
+        <header class="todo_header">
+          todo app native
+        </header>
+
+        <form class="todo__new" aria-label="新增待办事项">
+          <input type="text" class="todo__new__editor" name="todo__new__editor" placeholder="type something..." required aria-label="待办事项内容">
+          <button type="submit" class="todo__new__action" aria-label="添加待办事项">add</button>
+        </form>
+
+        <ul class="todo__list" aria-label="待办事项列表">
+
+        </ul>
+
+        <details class="todo__list__accordion-completed hidden" aria-label="已完成待办事项">
+          <summary class="todo__item__count-completed" aria-live="polite" aria-label="已完成待办事项数量"></summary>
+          <ul class="todo__list-completed" aria-label="已完成待办事项列表">
+            
+          </ul>
+        </details>
+      </main>
+
+      <template class="todo__item__template">
+        <li class="todo__item" aria-label="待办事项">
+          <input type="checkbox" class="todo__item__toggle" aria-label="完成待办事项">
+          <span class="todo__item__content" aria-live="polite" aria-label="待办事项内容"></span>
+          <input type="text" class="todo__item__editor" name="todo__item__editor" aria-label="编辑待办事项" aria-hidden="true" required>
+          <button type="submit" class="todo__item__action" aria-label="编辑待办事项"></button>
+        </li>
+      </template>
+    </div>
+    <script type="module" src="/src/index.ts"></script>
+  </body>
+</html>

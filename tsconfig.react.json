@@ -1,0 +1,9 @@
+{
+  "extends": ["./tsconfig.base"],
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.react.tsbuildinfo",
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+  },
+  "include": ["src/react/"]
+}

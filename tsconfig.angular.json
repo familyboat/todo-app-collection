@@ -1,0 +1,9 @@
+{
+  "extends": ["./tsconfig.base"],
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.angular.tsbuildinfo",
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false
+  },
+  "include": ["src/angular/"]
+}

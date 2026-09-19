@@ -1,0 +1,9 @@
+{
+  "extends": ["./tsconfig.base"],
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.preact.tsbuildinfo",
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact",
+  },
+  "include": ["src/preact/"]
+}

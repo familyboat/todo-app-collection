@@ -1,0 +1,14 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.solid.json" },
+    { "path": "./tsconfig.node.json" },
+    { "path": "./tsconfig.app.json"},
+    { "path": "./tsconfig.react.json"},
+    { "path": "./tsconfig.preact.json"},
+    { "path": "./tsconfig.vue.json"},
+    { "path": "./tsconfig.svelte.json"},
+    { "path": "./tsconfig.lit.json"},
+    { "path": "./tsconfig.angular.json"}
+  ]
+}

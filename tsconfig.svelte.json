@@ -1,0 +1,7 @@
+{
+  "extends": ["./tsconfig.base"],
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.svelte.tsbuildinfo"
+  },
+  "include": ["src/svelte/"]
+}

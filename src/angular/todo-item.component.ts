@@ -61,7 +61,6 @@ export class TodoItemComponent {
       if (this.editing()) {
         const el = this.editor()?.nativeElement
         el?.focus()
-        el?.select()
       }
     })
   }

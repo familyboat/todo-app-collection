@@ -20,7 +20,6 @@ function TodoItem(props: {
   createEffect(() => {
     if (editing() && inputRef) {
       inputRef.focus()
-      inputRef.select()
     }
   })
 

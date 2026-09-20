@@ -33,7 +33,6 @@ export class TodoItem extends LitElement {
     if (changedProperties.has('editing') && this.editing) {
       const input = this.querySelector('input.todo__item__editor') as HTMLInputElement | null
       input?.focus()
-      input?.select()
     }
   }
 

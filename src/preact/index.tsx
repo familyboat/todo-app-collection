@@ -23,7 +23,6 @@ function TodoItem({ todo, onToggle, onEdit }: TodoItemProps) {
   useEffect(() => {
     if (editing && inputRef.current) {
       inputRef.current.focus()
-      inputRef.current.select()
     }
   }, [editing])
 

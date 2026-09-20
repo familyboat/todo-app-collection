@@ -22,7 +22,6 @@ function TodoItem({
   useEffect(() => {
     if (editing && inputRef.current) {
       inputRef.current.focus()
-      inputRef.current.select()
     }
   }, [editing])
 

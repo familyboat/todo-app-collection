@@ -16,7 +16,6 @@ watch(editing, async (value) => {
   if (value) {
     await nextTick()
     inputRef.value?.focus()
-    inputRef.value?.select()
   }
 })
 

@@ -18,7 +18,6 @@
   $effect(() => {
     if (editing) {
       input?.focus()
-      input?.select()
     }
   })
 

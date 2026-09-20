@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "@angular-devkit/build-angular": "^22.0.9",
@@ -31,6 +32,7 @@
   },
   "devDependencies": {
     "@analogjs/vite-plugin-angular": "^2.7.2",
+    "@playwright/test": "^1.63.0",
     "@preact/preset-vite": "^2.10.6",
     "@sveltejs/vite-plugin-svelte": "^7.3.0",
     "@types/node": "^24.13.3",

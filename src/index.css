@@ -183,8 +183,6 @@ body {
   background: var(--surface-raised);
   border: 1px solid var(--border);
   border-radius: 10px;
-  transition: transform 220ms ease, opacity 220ms ease, background-color 220ms ease;
-  will-change: transform, opacity;
 }
 
 .todo__item__toggle {

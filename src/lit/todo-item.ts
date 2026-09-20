@@ -88,6 +88,7 @@ export class TodoItem extends LitElement {
           type="checkbox"
           class="todo__item__toggle"
           .checked="${this.todo.completed}"
+          ?disabled="${this.editing}"
           aria-label="${this.todo.completed ? `标记为未完成：${this.todo.content}` : `完成待办事项：${this.todo.content}`}"
           @change="${this.handleToggle}"
         />

@@ -50,6 +50,7 @@ function TodoItem({ todo, onToggle, onEdit }: TodoItemProps) {
         type="checkbox"
         class="todo__item__toggle"
         checked={todo.completed}
+        disabled={editing}
         aria-label={todo.completed ? `标记为未完成：${todo.content}` : `完成待办事项：${todo.content}`}
         onChange={(event) => onToggle((event.target as HTMLInputElement).checked)}
       />
